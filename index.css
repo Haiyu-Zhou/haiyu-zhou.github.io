@@ -89,8 +89,20 @@ a {
 }
 a:hover{
   text-decoration: none;
+}
+
+.studio-projects:hover{
   color:rgb(233, 26, 12);
 }
+
+.lab-assignments:hover{
+  color:rgb(41, 53, 207);
+}
+
+.lab-workshops:hover{
+  color:rgb(235, 191, 46);
+}
+
 
 #top-bar{
   font-size: 20pt;

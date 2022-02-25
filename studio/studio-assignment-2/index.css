@@ -112,6 +112,7 @@ margin-top: 50px;
 
   p:hover{
     text-decoration: none;
+    color:rgb(136, 47, 209);
   }
 /*
   div{
@@ -147,4 +148,9 @@ make margin-top and margin-bottom of the elements the same
 
 .draft{
   font-size: 20pt;
+}
+
+
+.studio-projects:hover{
+  color:rgb(233, 26, 12);
 }
