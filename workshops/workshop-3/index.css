@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'Barlow';
+    src: url('assets/Barlow/woff2/Barlow-BlackItalic.woff2') format('woff2'),
+        url('assets/Barlow/woff/Barlow-BlackItalic.woff') format('woff');
+  }
+
+  @font-face {
+    font-family: 'Coda';
+    src: url('assets/Coda/Coda-Regular.woff2') format('woff2'),
+        url('assets/Coda/Coda-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: whitesmoke;
+}
+.canvas{
+height:90vh;
+width:30vw;
+background-color: white;
+margin:0px;
+position:absolute;
+left:35vw;
+right:35vw;
+top:5vh;
+}
+
+#poster-1{
+    left:35vw;
+right:35vw;
+top:5vh;
+}
+
+#poster-2{
+left:35vw;
+right:35vw;
+}
+
+#container-1{
+    position:absolute;
+    width:30vw;
+    z-index:9999;
+    color:black;
+    left:0vw;
+    padding:3vw;
+    display: flex;
+    flex-direction: column;
+}
+
+#red-square{
+    width:auto;
+    height:35vh;
+    background-color: red;
+    position:relative;
+    margin:0;
+}
+
+#black-square{
+    width:auto;
+    height:35vh;
+    background-color: rgb(0, 0, 0);
+    position:relative;
+    margin:0;
+}
+#white-square{
+    font-family: 'Coda';
+    width:auto;
+    height:3vh;
+    background-color: white;
+    position:relative;
+    margin:0;
+    letter-spacing: 5px;
+}
+
+#sub-title{
+    margin-top: 1vh;
+    text-align: right;
+    font-size: 5pt;
+}
+
+#THE{
+    font-size: 150pt;
+    text-align: center;
+    position:relative;
+    bottom:20vh;
+    font-family: 'Barlow';
+    letter-spacing: 0;
+}
+
+#CARDINAL{
+    font-family: 'Barlow';
+    color:white;
+    font-size: 50pt;
+    position: absolute;
+    top:17vh;
+    right:2vh;
+}
+
+#caption{
+    font-size: 0.5px;
+    line-height: 1.2;
+    font-family: 'Coda';
+    text-align: justify;
+}
+
+#author{
+    position:absolute;
+    color:black;
+    writing-mode: vertical-rl;
+text-orientation: mixed;
+font-family: 'Coda';
+font-size: 1pt;
+position: absolute;
+right:4vh;
+}

@@ -1,0 +1,119 @@
+@font-face {
+  font-family: "CirrusCumulus";
+  src: url("assets/font/CirrusCumulus.woff2") format("woff2"),
+    url("assets/font/CirrusCumulus.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+  background-color: black;
+}
+
+body {
+  font-family: CirrusCumulus;
+  margin: 0;
+  width:10000px;
+  height:5000px;
+  margin-left:5%;
+  color:white;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+p {
+  font-size: 50pt;
+  margin-top: 0;
+}
+
+#sub-title {
+  font-size: 20pt;
+}
+
+img {
+  height: 100vh;
+  margin-top: 40px;
+  margin-left: 10%;
+}
+
+#fog {
+  width: 50vw;
+  height: 50vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#fog:hover {
+  z-index: -99;
+}
+
+
+.text{
+  width: 1000px;
+  height:auto;
+  display:inline-block;
+  margin-bottom:6%;
+  margin-right: 6%;
+}
+
+
+
+/*navigation buttons*/
+.bt{
+  width:20px;
+  height:20px;
+  background-color: white;
+  position: fixed;
+}
+#button-up{
+  top:0;
+  left:50vw;
+}
+#button-down{
+  bottom:0;
+  left:50vw;
+}
+#button-left{
+  top:50vh;
+  left:0;
+}
+#button-right{
+  top:50vh;
+  right:0;
+}
+
+#button-lu{
+  top:0;
+  left:0;
+}
+
+#button-ld{
+  bottom:0;
+  left:0;
+}
+
+#button-ru{
+  top:0;
+  right:0;
+}
+
+#button-rd{
+  bottom:0;
+  right:0;
+}
+
+#f-1{
+  width:1000px;
+  height:auto;
+  position:absolute;
+  left:5%;
+  top:800px;
+  margin:0;
+}
+
+#f-1:hover{
+  z-index: -99;
+}

@@ -1,0 +1,54 @@
+@font-face {
+    font-family: '';
+    src: url('NotoSansTC-Light-Alphabetic.woff2') format('woff2'),
+        url('NotoSansTC-Light-Alphabetic.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: '';
+    src: url('NotoSansTC-Black-Alphabetic.woff2') format('woff2'),
+        url('NotoSansTC-Black-Alphabetic.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: '';
+    src: url('NotoSansTC-Bold-Alphabetic.woff2') format('woff2'),
+        url('NotoSansTC-Bold-Alphabetic.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: '';
+    src: url('NotoSansTC-Medium-Alphabetic.woff2') format('woff2'),
+        url('NotoSansTC-Medium-Alphabetic.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: '';
+    src: url('NotoSansTC-Regular-Alphabetic.woff2') format('woff2'),
+        url('NotoSansTC-Regular-Alphabetic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: '';
+    src: url('NotoSansTC-Thin-Alphabetic.woff2') format('woff2'),
+        url('NotoSansTC-Thin-Alphabetic.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+

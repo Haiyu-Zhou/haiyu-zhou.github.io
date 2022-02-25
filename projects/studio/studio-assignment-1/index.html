@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>How about some cheesecake</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,700&family=Knewave&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .screenshots {
+        width: 68%;
+        height: auto;
+        position: absolute;
+        left: 0%;
+        top: 0%;
+      }
+
+      .buttons {
+        font-family: "Knewave", cursive;
+        width: 32%;
+        height: 100%;
+        position: absolute;
+        right: 0%;
+        top: 0%;
+        text-align: center;
+        background-color: rgba(168, 233, 133, 1);
+      }
+      .buttons:hover {
+        background-color: rgb(240, 222, 115);
+        /*color:rgba(130, 90, 54, 1);*/
+      }
+      #button-1 {
+        font-size: 50pt;
+      }
+
+      #link-1 {
+        text-decoration: none;
+        color: black;
+        position: relative;
+        top: 45%;
+      }
+    </style>
+
+    <!--
+<script>
+function clickButton1(){
+  let var1 = document.getElementById("screenshot-1"); 
+  var1.style.visibility = "visible";
+  console.log(Click button-1, then screenshot-1 appears.);
+}
+</script>
+-->
+  </head>
+
+  <body>
+    <!--Screenshot-->
+    <img
+      class="screenshots"
+      id="screenshot-0"
+      src="images/Wechat-screenshot-0.jpg"
+      alt="Wechat screenshot-0"
+    />
+
+    <!--button-->
+    <div class="buttons" id="button-1">
+      <a id="link-1" href="1-1.html">"YES, cheesecake!"</a>
+    </div>
+
+    <!--buttons
+<div class="buttons" id="button-2">
+  <p>"Time to test where our limit is"</p>
+</div>
+
+<div class="buttons" id="button-3">
+  <p>"Really?"</p>
+</div>
+
+<div class="buttons" id="button-4">
+  <p>Try it</p>
+</div>
+-->
+  </body>
+</html>

@@ -1,0 +1,233 @@
+@font-face {
+    font-family: 'League Spartan';
+    src: url('assets/LeagueSpartan-2.220/static/WOFF2/LeagueSpartan-Light.woff2') format('woff2'),
+        url('assets/LeagueSpartan-2.220/static/WOFF/LeagueSpartan-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'League Spartan';
+    src: url('assets/LeagueSpartan-2.220/static/WOFF2/LeagueSpartan-SemiBold.woff2') format('woff2'),
+        url('assets/LeagueSpartan-2.220/static/WOFF/LeagueSpartan-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'League Spartan';
+    src: url('assets/LeagueSpartan-2.220/static/WOFF2/LeagueSpartan-Medium.woff2') format('woff2'),
+        url('assets/LeagueSpartan-2.220/static/WOFF/LeagueSpartan-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'League Spartan';
+    src: url('assets/LeagueSpartan-2.220/static/WOFF2/LeagueSpartan-ExtraLight.woff2') format('woff2'),
+        url('assets/LeagueSpartan-2.220/static/WOFF/LeagueSpartan-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'League Spartan';
+    src: url('assets/LeagueSpartan-2.220/static/WOFF2/LeagueSpartan-Bold.woff2') format('woff2'),
+        url('assets/LeagueSpartan-2.220/static/WOFF/LeagueSpartan-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'League Spartan';
+    src: url('assets/LeagueSpartan-2.220/static/WOFF2/LeagueSpartan-Black.woff2') format('woff2'),
+        url('assets/LeagueSpartan-2.220/static/WOFF/LeagueSpartan-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'League Spartan';
+    src: url('assets/LeagueSpartan-2.220/static/WOFF2/LeagueSpartan-ExtraBold.woff2') format('woff2'),
+        url('assets/LeagueSpartan-2.220/static/WOFF/LeagueSpartan-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'League Spartan';
+    src: url('assets/LeagueSpartan-2.220/static/WOFF2/LeagueSpartan-Regular.woff2') format('woff2'),
+        url('assets/LeagueSpartan-2.220/static/WOFF/LeagueSpartan-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+/*style for body*/
+
+body{
+    margin:5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.text{
+    font-family: 'League Spartan';
+}
+.box{
+    width:3000px;
+    text-align: left;
+}
+#box-1{
+    font-family: 'League Spartan';
+    font-weight: 200;
+    font-style: normal;
+    border-style: none;
+    border-bottom: 2px solid;
+}
+#box-2{
+    font-family: 'League Spartan';
+    font-weight: 300;
+    font-style: normal;
+    border-style: none;
+    border-bottom: 2px solid;
+}
+#box-3{
+    font-family: 'League Spartan';
+    font-weight: normal;
+    font-style: normal;
+    border-style: none;
+    border-bottom: 2px solid;
+}
+#box-4{
+    font-family: 'League Spartan';
+    font-weight: 500;
+    font-style: normal;
+    border-style: none;
+    border-bottom: 2px solid;
+}
+#box-5{
+    font-family: 'League Spartan';
+    font-weight: 600;
+    font-style: normal;
+    border-style: none;
+    border-bottom: 2px solid;
+}
+#box-6{
+    font-family: 'League Spartan';
+    font-weight: 700;
+    font-style: normal;
+    border-style: none;
+    border-bottom: 2px solid;
+}
+#box-7{
+    font-family: 'League Spartan';
+    font-weight: 800;
+    font-style: normal;
+    border-style: none;
+    border-bottom: 2px solid;
+}
+#box-8{
+    font-family: 'League Spartan';
+    font-weight: 900;
+    font-style: normal;
+    border-style: none;
+    border-bottom: 2px solid;
+}
+
+#Title{
+    font-family: 'League Spartan';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 100pt;
+    margin:0%;
+}
+
+#designer{
+    font-family: 'League Spartan';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20pt;
+}
+
+#description{
+    font-family: 'League Spartan';
+    font-weight: 300;
+    font-style: normal;
+    font-size: 15pt;
+}
+
+#Alphabet-1{
+    margin-top: 10%;
+    font-size: 30pt;
+    padding:20px;
+    border-style: none;
+    display: flex;
+    flex-direction: row;
+}
+.sub{
+    font-size: 15pt;
+}
+
+#Alphabet-2{
+    margin-top: 10%;
+    font-size: 100pt;
+    padding:20px;    
+}
+
+
+#poem{
+    font-family: 'League Spartan';
+    font-weight: 200;
+    font-style: normal;
+    font-size: 40pt;
+    width:30vw;
+    height:40vh;
+    overflow: scroll;
+    margin-bottom: 20%;
+    position: absolute;
+    right: 5%;
+    top:5%;
+    margin:0;
+
+}
+#poem::-webkit-scrollbar {
+    display: none;
+  }
+
+
+  .overlap{
+    width:50px;
+    font-size: 50pt;
+  }
+
+#container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@media screen and (width: 600px) {
+*{
+    flex-direction: column;
+}
+#poem{
+    position: relative;
+    width:600px;
+}
+}
+/*
+#Alphabet:hover{
+background-color: black;
+color:white;
+}*/
