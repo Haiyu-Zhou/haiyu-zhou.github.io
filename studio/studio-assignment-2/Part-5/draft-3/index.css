@@ -13,7 +13,7 @@
 
 body {
   font-family: CirrusCumulus;
-  margin: 0;
+  margin: 5%;
   width:10000px;
   height:13000px;
   margin-left:5%;
@@ -39,29 +39,18 @@ img {
   left:0px;
 }
 
-div:hover + img{
+div:hover > img{
   z-index: -99;
 }
 
-#fog {
-  width: 50vw;
-  height: 50vh;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-#fog:hover {
-  z-index: -99;
-}
 
 
 .text{
   width: 1000px;
   height:auto;
   display:inline-block;
-  margin-bottom:6%;
-  margin-right: 6%;
+  margin-bottom:3%;
+  margin-right: 3%;
   position: relative;
 }
 
@@ -77,14 +66,15 @@ div:hover + img{
 }
 #t-6{
 }
-#t-7{
-  font-size: 10pt;
+#t-7 p {
+  font-size: 17pt;
 }
 #t-8{
 }
 #t-9{
 }
 #t-10{
+  font-size: 10pt;
 }
 #t-11{
 }
@@ -125,8 +115,10 @@ div:hover + img{
 .bt{
   width:40px;
   height:40px;
-  background-color: black;
   position: fixed;
+  background-image: url("assets/images/polygon.svg");
+  border: none;
+  background-color: transparent;
 }
 #button-up{
   top:0;
@@ -168,7 +160,22 @@ div:hover + img{
 #navigation-bar{
   position: fixed;
   top:0;
-  left:30px;
+  left:50px;
   width:20vw;
-  height:auto;
+  height:100vh;
+  display: flex;
 }
+
+/*li{
+  visibility: hidden;
+}
+#black-polygon{
+background-image: url("assets/images/black\ polygon.svg");
+width: 40px;
+height: 40px;
+}
+
+#black-polygon:hover > li{
+  visibility: visible;
+}
+

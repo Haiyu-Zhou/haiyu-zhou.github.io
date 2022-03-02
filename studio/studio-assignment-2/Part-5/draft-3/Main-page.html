@@ -107,6 +107,14 @@
             document
               .getElementById("navigation-button")
               .addEventListener("click", clickMoveRightDown);
+
+
+              function clickMenu() {
+                var col=document.getElementById("menu");
+                col.style.visibility="visible";
+              };
+              console.log("Move down 200px.");
+            
     </script>
   </head>
 
@@ -478,9 +486,12 @@
 
 
 <!--navigation bar-->
+
+
+
 <div id="navigation-bar">
-  <ul>
- 
+  <div id="black-polygon" onclick="clickMenu()"></div>
+  <ul id="menu">
 <li><a href="#t-1">1</a></li>
 <li><a href="#t-2">2</a></li>
 <li><a href="#t-3">3</a></li>
