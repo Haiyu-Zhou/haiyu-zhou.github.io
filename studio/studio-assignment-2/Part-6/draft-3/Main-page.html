@@ -4,9 +4,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Draft-3</title>
+    <title>Part-6-Draft-1</title>
     <!---->
-    <meta name="description" content="Lab Workshop #2" />
+    <meta name="description" content="Project 2" />
     <meta name="author" content="Haiyu Zhou" />
     <meta property="og:title" content="Page Title" />
     <meta property="og:type" content="website" />
@@ -17,10 +17,10 @@
             //Direct
             function clickMoveDown() {
               window.scrollBy({
-                top: 600,
+                top: 500,
                 behavior: "smooth",
               });
-              console.log("Move down 200px.");
+              console.log("Move down 500px.");
             }
             document
               .getElementById("navigation-button")
@@ -28,10 +28,10 @@
 
               function clickMoveUp() {
               window.scrollBy({
-                top: -600,
+                top: -500,
                 behavior: "smooth",
               });
-              console.log("Move down 200px.");
+              console.log("Move up 500px.");
             }
             document
               .getElementById("navigation-button")
@@ -39,10 +39,10 @@
 
               function clickMoveLeft() {
               window.scrollBy({
-                left: -600,
+                left: -500,
                 behavior: "smooth",
               });
-              console.log("Move down 200px.");
+              console.log("Move left 500px.");
             }
             document
               .getElementById("navigation-button")
@@ -50,10 +50,10 @@
 
               function clickMoveRight() {
               window.scrollBy({
-                left: 600,
+                left: 500,
                 behavior: "smooth",
               });
-              console.log("Move down 200px.");
+              console.log("Move right 500px.");
             }
             document
               .getElementById("navigation-button")
@@ -62,11 +62,11 @@
             //Corners
             function clickMoveLeftUp() {
               window.scrollBy({
-                top: -600,
-                left:-600,
+                top: -500,
+                left:-500,
                 behavior: "smooth",
               });
-              console.log("Move down 200px.");
+              console.log("Move left 500px and up 500px.");
             }
             document
               .getElementById("navigation-button")
@@ -74,11 +74,11 @@
 
               function clickMoveLeftDown() {
               window.scrollBy({
-                top: 600,
-                left:-600,
+                top: 500,
+                left:-500,
                 behavior: "smooth",
               });
-              console.log("Move down 200px.");
+              console.log("Move left 500px and down 500px.");
             }
             document
               .getElementById("navigation-button")
@@ -86,11 +86,11 @@
 
               function clickMoveRightUp() {
               window.scrollBy({
-                top: -600,
-                left:600,
+                top: -500,
+                left:500,
                 behavior: "smooth",
               });
-              console.log("Move down 200px.");
+              console.log("Move right 500px and up 500px.");
             }
             document
               .getElementById("button-ru")
@@ -98,23 +98,22 @@
 
               function clickMoveRightDown() {
               window.scrollBy({
-                top: 600,
-                left:600,
+                top: 500,
+                left:500,
                 behavior: "smooth",
               });
-              console.log("Move down 200px.");
+              console.log("Move right 500px and down 500px.");
             }
             document
               .getElementById("navigation-button")
               .addEventListener("click", clickMoveRightDown);
 
 
-              function clickMenu() {
-                var col=document.getElementById("menu");
-                col.style.visibility="visible";
-              };
-              console.log("Move down 200px.");
-            
+//             function clickMenu() {
+//                var col=document.getElementById("menu");
+//                col.style.visibility="visible";
+//              };
+//              console.log("Move down 200px.");
     </script>
   </head>
 
@@ -127,7 +126,7 @@
         In life, the number of beginnings is exactly equal to the number of
         endings: no one has yet to begin a life who will not end it.
       </p>
-      <img src="assets/images/1.png">
+      <img class="fog" src="assets/images/1.png">
     </div>
 
     <div class="text" id="t-2">
@@ -137,7 +136,7 @@
         is abandoned, another catches fire and is carried away by the wind,
         which may be an ending, but it is the ending of a poem without an end.
       </p>
-      <img src="assets/images/2.png">
+      <img class="fog" src="assets/images/2.png">
     </div>
     <div class="text" id="t-3">
       <p>
@@ -146,7 +145,7 @@
         attributed to Stéphane Mallarmé, for where quotations begin is in a
         cloud.
       </p>
-      <img src="assets/images/3.png">
+      <img class="fog" src="assets/images/3.png">
     </div>
     <div class="text" id="t-4">
       <p>
@@ -156,7 +155,7 @@
         of fallen fruit you have never seen before, and the poet's task is to
         create the tree from which such a fruit would fall.
       </p>
-      <img src="assets/images/4.png">
+      <img class="fog" src="assets/images/4.png">
     </div>
     <div class="text" id="t-5">
       <p>
@@ -166,7 +165,7 @@
         before act, no thought before act, no pervasive love before some kind of
         act.
       </p>
-      <img src="assets/images/5.png">
+      <img class="fog" src="assets/images/5.png">
     </div>
     <div class="text" id="t-6">
       <p>
@@ -177,7 +176,7 @@
         somehow this happens, somehow a poem gets written in the middle of a
         chaotic holiday party that has just run out of ice, and it's your house.
       </p>
-      <img src="assets/images/6.png">
+      <img class="fog" src="assets/images/6.png">
     </div>
     <div class="text" id="t-7">
       <p>
@@ -197,7 +196,7 @@
         circle around the action and observe it from outside the circle; in
         other words, self-consciousness is theatre.
       </p>
-      <img src="assets/images/7.png">
+      <img class="fog" src="assets/images/7.png">
     </div>
     <div class="text" id="t-8">
       <p>
@@ -210,14 +209,14 @@
         alley, at the top of a cliff you haven't even climbed. This is a lesson
         that can only be learned by trial and error.
       </p>
-      <img src="assets/images/8.png">
+      <img class="fog" src="assets/images/8.png">
     </div>
     <div class="text" id="t-9">
       <p>
         I believe many fine poems begin with ideas, but if you tell too many
         faces this, or tell it too loudly, they will get the wrong idea.
       </p>
-      <img src="assets/images/9.png">
+      <img class="fog" src="assets/images/9.png">
     </div>
     <div class="text" id="t-10">
       <p>
@@ -233,7 +232,7 @@
         are heard by someone who knows you and loves you and will be sorry to
         hear the sentence end.
       </p>
-      <img src="assets/images/10.png">
+      <img class="fog" src="assets/images/10.png">
     </div>
     <div class="text" id="t-11">
       <p>
@@ -246,7 +245,7 @@
         matter of fact—that allows us to go on and keep on connecting speech
         that for all apparent purposes is unrelated.
       </p>
-      <img src="assets/images/11.png">
+      <img class="fog" src="assets/images/11.png">
     </div>
     <div class="text" id="t-12">
       <p>
@@ -256,14 +255,14 @@
         poem—and if it were not for the poem that intervenes, the first and last
         lines of a poem would not speak to each other.
       </p>
-      <img src="assets/images/12.png">
+      <img class="fog" src="assets/images/12.png">
     </div>
     <div class="text" id="t-13">
       <p>
         Would not speak to each other. Because the lines of a poem are speaking
         to each other, not you to them or they to you.
       </p>
-      <img src="assets/images/13.png">
+      <img class="fog" src="assets/images/13.png">
     </div>
     <div class="text" id="t-14">
       <p>
@@ -273,7 +272,7 @@
         from the last words of the last sentence, are the dark letters spelling
         The End.
       </p>
-      <img src="assets/images/14.png">
+      <img class="fog" src="assets/images/14.png">
     </div>
     <div class="text" id="t-15">
       <p>
@@ -282,7 +281,7 @@
         replete, a feeling of satisfaction, and the feeling of loss, the sadness
         of having finished the book.
       </p>
-      <img src="assets/images/15.png">
+      <img class="fog" src="assets/images/15.png">
     </div>
     <div class="text" id="t-16">
       <p>
@@ -301,7 +300,7 @@
         And so they sign their poems and stories like kings. Which is a
         wonderful thing.
       </p>
-      <img src="assets/images/16.png">
+      <img class="fog" src="assets/images/16.png">
     </div>
     <div class="text" id="t-17">
       <p>
@@ -310,7 +309,7 @@
         or the ending will execute a pirouette, do something unexpectedly
         incongruent.
       </p>
-      <img src="assets/images/17.png">
+      <img class="fog" src="assets/images/17.png">
     </div>
     <div class="text" id="t-18">
       <p>
@@ -323,7 +322,7 @@
         familiarization, by admiring not the thing itself but how we can
         organize it, think about it.
       </p>
-      <img src="assets/images/18.png">
+      <img class="fog" src="assets/images/18.png">
     </div>
     <div class="text" id="t-19">
       <p>
@@ -331,7 +330,7 @@
         thing. And if you believe that, then you are conceding that in the
         beginning was the act, not the word.
       </p>
-      <img src="assets/images/19.png">
+      <img class="fog" src="assets/images/19.png">
     </div>
     <div class="text" id="t-20">
       <p>
@@ -339,7 +338,7 @@
         “The image cannot be disposed of a primordial freshness which ideas can
         never claim.”
       </p>
-      <img src="assets/images/20.png">
+      <img class="fog" src="assets/images/20.png">
     </div>
     <div class="text" id="t-21">
       <p>
@@ -348,14 +347,14 @@
         men and women have written long essays and lectures on the ideas they
         see expressed in Twombly's work.
       </p>
-      <img src="assets/images/21.png">
+      <img class="fog" src="assets/images/21.png">
     </div>
     <div class="text" id="t-22">
       <p>
         Bachelard's sentence simply says this: origins (beginnings) have
         consequences (endings).
       </p>
-      <img src="assets/images/22.png">
+      <img class="fog" src="assets/images/22.png">
     </div>
     <div class="text" id="t-23">
       <p>
@@ -363,7 +362,7 @@
         take from it a seed and plant it and watch grow the tree from which it
         fell.
       </p>
-      <img src="assets/images/23.png">
+      <img class="fog" src="assets/images/23.png">
     </div>
     <div class="text" id="t-24">
       <p>
@@ -375,7 +374,7 @@
         familiar set of terms, an experience is gratifying to the extent that
         those expectations that are aroused are also fulfilled.”
       </p>
-      <img src="assets/images/24.png">
+      <img class="fog" src="assets/images/24.png">
     </div>
     <div class="text" id="t-25">
       <p>
@@ -387,7 +386,7 @@
         would precede knowledge, and we can't “know” anything before “knowing”
         itself was born.
       </p>
-      <img src="assets/images/25.png">
+      <img class="fog" src="assets/images/25.png">
     </div>
     <div class="text" id="t-26">
       <p>
@@ -408,7 +407,7 @@
         something made out of language that we hope to hear on earth: I love
         you. I am here with you. Don't be afraid. Go to sleep now.
       </p>
-      <img src="assets/images/26.png">
+      <img class="fog" src="assets/images/26.png">
     </div>
     <div class="text" id="t-27">
       <p>
@@ -418,13 +417,8 @@
         out, exploring the earth, her whole life, and it was finally time to go
         in. And it was.
       </p>
-      <img src="assets/images/1.png">
+      <img class="fog" src="assets/images/1.png">
     </div>
-
-
-  <!--gradients-->
-
-
 
   <!--buttons-->
   <button
@@ -492,33 +486,33 @@
 <div id="navigation-bar">
   <div id="black-polygon" onclick="clickMenu()"></div>
   <ul id="menu">
-<li><a href="#t-1">1</a></li>
-<li><a href="#t-2">2</a></li>
-<li><a href="#t-3">3</a></li>
-<li><a href="#t-4">4</a></li>
-<li><a href="#t-5">5</a></li>
-<li><a href="#t-6">6</a></li>
-<li><a href="#t-7">7</a></li>
-<li><a href="#t-8">8</a></li>
-<li><a href="#t-9">9</a></li>
-<li><a href="#t-10">10</a></li>
-<li><a href="#t-11">11</a></li>
-<li><a href="#t-12">12</a></li>
-<li><a href="#t-13">13</a></li>
-<li><a href="#t-14">14</a></li>
-<li><a href="#t-15">15</a></li>
-<li><a href="#t-16">16</a></li>
-<li><a href="#t-17">17</a></li>
-<li><a href="#t-18">18</a></li>
-<li><a href="#t-19">19</a></li>
-<li><a href="#t-20">20</a></li>
-<li><a href="#t-21">21</a></li>
-<li><a href="#t-22">22</a></li>
-<li><a href="#t-23">23</a></li>
-<li><a href="#t-24">24</a></li>
-<li><a href="#t-25">25</a></li>
-<li><a href="#t-26">26</a></li>
-<li><a href="#t-27">27</a></li> 
+<li><a href="#t-1"><img src="assets/images/m-1.svg" width="40px" height="40px"></a></li>
+<li><a href="#t-2"><img src="assets/images/m-2.svg" width="40px" height="40px"></a></li>
+<li><a href="#t-3"><img src="assets/images/m-3.svg" width="40px" height="40px"></a></li>
+<li><a href="#t-4"><img src="assets/images/m-4.svg" width="40px" height="40px"></a></li>
+<li><a href="#t-5"><img src="assets/images/m-5.svg" width="40px" height="40px"></a></li>
+<li><a href="#t-6"><img src="assets/images/m-6.svg" width="40px" height="40px"></a></li>
+<li><a href="#t-7"><img src="assets/images/m-7.svg" width="40px" height="40px"></a></li>
+<li><a href="#t-8"><img src="assets/images/m-8.svg" width="40px" height="40px"></a></li>
+<li><a href="#t-9"><img src="assets/images/m-9.svg" width="40px" height="40px"></a></li>
+<li><a href="#t-10"><img src="assets/images/m-10.svg" width="40px" height="40px"></a></li>
+<li><a href="#t-11"><img src="assets/images/m-11.svg" width="40px" height="40px"></a></li>
+<li><a href="#t-12"><img src="assets/images/m-12.svg" width="40px" height="40px"></a></li>
+<li><a href="#t-13"><img src="assets/images/m-13.svg" width="40px" height="40px"></a></li>
+<li><a href="#t-14"><img src="assets/images/m-1.svg" width="40px" height="40px"></a></li>
+<li><a href="#t-15"><img src="assets/images/m-2.svg" width="40px" height="40px"></a></li>
+<li><a href="#t-16"><img src="assets/images/m-3.svg" width="40px" height="40px"></a></li>
+<li><a href="#t-17"><img src="assets/images/m-4.svg" width="40px" height="40px"></a></li>
+<li><a href="#t-18"><img src="assets/images/m-5.svg" width="40px" height="40px"></a></li>
+<li><a href="#t-19"><img src="assets/images/m-6.svg" width="40px" height="40px"></a></li>
+<li><a href="#t-40"><img src="assets/images/m-7.svg" width="40px" height="40px"></a></li>
+<li><a href="#t-21"><img src="assets/images/m-8.svg" width="40px" height="40px"></a></li>
+<li><a href="#t-22"><img src="assets/images/m-9.svg" width="40px" height="40px"></a></li>
+<li><a href="#t-23"><img src="assets/images/m-10.svg" width="40px" height="40px"></a></li>
+<li><a href="#t-24"><img src="assets/images/m-11.svg" width="40px" height="40px"></a></li>
+<li><a href="#t-25"><img src="assets/images/m-12.svg" width="40px" height="40px"></a></li>
+<li><a href="#t-26"><img src="assets/images/m-13.svg" width="40px" height="40px"></a></li>
+<li><a href="#t-27"><img src="assets/images/m-1.svg" width="40px" height="40px"></a></li> 
 </ul>
   </body>
 </html>
