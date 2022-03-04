@@ -5,8 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Assignment #3 - Responsive LOGOs</title>
-    <!---->
-    <meta name="description" content="Workshop-4" />    
+    <meta name="description" content="Assignment-3" />
     <meta name="author" content="Haiyu Zhou" />
     <meta property="og:title" content="Page Title" />
     <meta property="og:type" content="website" />
@@ -14,10 +13,34 @@
     <meta property="og:image" content="image.png" />
     <link rel="stylesheet" type="text/css" href="index.css" />
     <link rel="shortcut icon" type="image/jpg" href="assets/favicon.png" />
+    <link rel="stylesheet" href="https://use.typekit.net/mti7xxc.css" />
+
+    <script>
+      function clickChangeLOGO() {
+        document.getElementById("img-2").style.visibility = "visible";
+        document.getElementById("img-2").style.display = "block";
+        document.getElementById("img-1").style.display = "none";
+        console.log("change LOGO");
+      }
+      function clickChangeLOGO2() {
+        document.getElementById("img-1").style.visibility = "visible";
+        document.getElementById("img-1").style.display = "block";
+        document.getElementById("img-2").style.display = "none";
+        console.log("change LOGO");
+      }
+    </script>
   </head>
+
   <body>
-
-
-
-</body>
+    <div id="container-3">
+      <div class="container" id="container-1">
+        <img id="img-1" onclick="clickChangeLOGO()" src="assets/Asset 1.svg" />
+        <img id="img-2" onclick="clickChangeLOGO2()" src="assets/Asset 2.svg" />
+      </div>
+      <div class="container" id="container-2">
+        <p id="title">Triadisches Ballett</p>
+        <p id="sub">The Bauhaus</p>
+      </div>
+    </div>
+  </body>
 </html>
