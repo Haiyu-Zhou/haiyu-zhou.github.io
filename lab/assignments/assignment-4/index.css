@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'Zen Kurenaido';
+    src: url('assets/font/Zen/ZenKurenaido-Regular.woff2') format('woff2'),
+        url('assets/font/Zen/ZenKurenaido-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+
+@font-face {
+    font-family: 'Shippori Mincho';
+    src: url('assets/font/Shippori/ShipporiMincho-Regular.woff2') format('woff2'),
+        url('assets/font/Shippori/ShipporiMincho-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Shippori Mincho';
+    src: url('ShipporiMincho-SemiBold.woff2') format('woff2'),
+        url('ShipporiMincho-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Shippori Mincho';
+    src: url('ShipporiMincho-Medium.woff2') format('woff2'),
+        url('ShipporiMincho-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Shippori Mincho';
+    src: url('ShipporiMincho-Bold.woff2') format('woff2'),
+        url('ShipporiMincho-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Shippori Mincho';
+    src: url('ShipporiMincho-ExtraBold.woff2') format('woff2'),
+        url('ShipporiMincho-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+body{
+    margin:0;
+    background-color: black;    
+    font-family: 'Shippori Mincho';
+    font-size: 20pt;
+    color:white;
+    background-image: url("assets/lamp_photo.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+#title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:100vw;
+    height:100vh;
+    margin:0;
+    padding:0;
+    text-align: center;
+}
+
+a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: 'Zen Kurenaido';
+}
+
+a:hover{
+    color:rgb(192, 206, 228);
+}
