@@ -347,7 +347,9 @@ li:hover {
     z-index:-99;
   }
 
-
+  .text {
+    margin-bottom: 100px;
+  }
 
 }
 
