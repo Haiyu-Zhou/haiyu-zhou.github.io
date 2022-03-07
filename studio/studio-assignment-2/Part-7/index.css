@@ -14,8 +14,8 @@
 body {
   font-family: CirrusCumulus;
   margin: 5%;
-  width: 10000px;
-  height: 7700px;
+  width: 6300px;
+  height: 5000px;
   margin-left: 5%;
 }
 body::-webkit-scrollbar {
@@ -25,10 +25,6 @@ body::-webkit-scrollbar {
 p {
   font-size: 50pt;
   margin-top: 0;
-}
-
-#sub-title {
-  font-size: 20pt;
 }
 
 .fog {
@@ -49,7 +45,6 @@ div:hover > img {
   display: inline-block;
   margin-bottom: 300px;
   position: relative;
-  
 }
 
 #t-1 {
@@ -177,7 +172,6 @@ ul {
   margin: 0;
   padding: 0;
   margin-left: 60px;
-  
 }
 
 ul:hover {
@@ -188,7 +182,6 @@ ul::-webkit-scrollbar {
   display: none;
 }
 
-
 @keyframes moon-phase {
   from {
     margin-top: 0;
@@ -198,15 +191,14 @@ ul::-webkit-scrollbar {
   }
 }
 
-li{
+li {
   width: 40px;
   margin-top: 2px;
 }
-li:hover{
+li:hover {
   background-image: url("assets/images/black\ polygon.svg");
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
 }
-
 
 /*For mobile*/
 
@@ -222,49 +214,122 @@ li:hover{
   }
 }
 
-
-
-#d-body{
-  width:100vw;
-  height:100vh;
-  margin:0;
-  padding:0;
+#large-container {
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: row;
 }
 
-
-
-
-#large-container{
-  margin:0;
-  padding:0;
-  display: flex;
-  flex-direction: row;
-}
-
-.container{
-  width:80vw;
-  height:fit-content;
+.container {
+  width: 80vw;
+  height: 5000px;
   position: relative;
-display: flex;
-flex-direction: column;
-margin-right: 300px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 300px;
 }
 
-.normal{
+.normal {
   flex-direction: column;
 }
 
-.reverse{
-flex-direction: column-reverse;
+.reverse {
+  flex-direction: column-reverse;
 }
 
+/*homepage layout*/
+#homepage {
+  width: 100vw;
+  height: 200vh;
+  margin: 0;
+  padding: 0;
+}
 
+#sub-title {
+  font-size: 50pt;
+  width: 50vw;
+  height: auto;
+  position: absolute;
+  right: 5vw;
+  top: 8vh;
+}
 
+#main-title {
+  width: 95vw;
+  height: 95vh;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 5vh;
+  left: 5vw;
+}
 
-.paras{
-  width:80vw;
-  height:auto;
+#main-title p {
+  font-size: 200pt;
+  line-height: 200pt;
+  margin-bottom: 20px;
+  z-index:-99;
+}
+#home-fog{
+  width: 100vw;
+  height:100vh;
+  z-index:99;
+  position:fixed;
+  top:0;
+  left:0;
+}
+
+#to-next{
+  z-index: 100;
+  width:4vw;
+  height:4vw;
+  position: absolute;
+  top:150vh;
+  left:46vw;
+  background-image: url("assets/images/polygon.svg");
+  background-repeat: no-repeat;
+}
+#to-next:hover{
+  background-image: url("assets/images/black\ polygon.svg");
+}
+
+#moon-container{
+  width:100vw;
+  height:100vh;
+  position:absolute;
+  top:100vh;
+  margin:0;
+  padding:0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.moon-row{
+  display: flex;
+  flex-direction: row;
+}
+.moons{
+  width:4vw;
+  height:4vw;
+}
+.moons img{
+  width:8vw;
+  height:8vw;
+}
+/*Only for flexbox demo*/
+
+#d-body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.paras {
+  width: 80vw;
+  height: auto;
   background-color: blueviolet;
 }
