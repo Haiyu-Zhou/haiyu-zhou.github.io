@@ -200,19 +200,7 @@ li:hover {
   background-repeat: no-repeat;
 }
 
-/*For mobile*/
 
-@media only screen and (max-width: 768px) {
-  .text {
-    width: 600px;
-  }
-  p {
-    font-size: 40pt;
-  }
-  .fog {
-    visibility: hidden;
-  }
-}
 
 #large-container {
   margin: 0;
@@ -317,6 +305,59 @@ li:hover {
   width:8vw;
   height:8vw;
 }
+
+
+
+/*For mobile*/
+
+@media only screen and (max-width: 768px) {
+  .text {
+    width: 600px;
+  }
+  p {
+    font-size: 40pt;
+  }
+  .fog {
+    visibility: hidden;
+  }
+
+  #sub-title {
+    font-size: 15pt;
+    width: 50vw;
+    height: auto;
+    position: absolute;
+    right: 5vw;
+    top: 8vh;
+  }
+  
+  #main-title {
+    width: 95vw;
+    height: 95vh;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 8vh;
+    left: 5vw;
+  }
+  
+  #main-title p {
+    font-size: 50pt;
+    line-height: 50pt;
+    margin-bottom: 20px;
+    z-index:-99;
+  }
+
+
+
+}
+
+
+
+
+
+
+
+
 /*Only for flexbox demo*/
 
 #d-body {
