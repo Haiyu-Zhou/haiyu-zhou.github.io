@@ -1,0 +1,15 @@
+body {
+  font-family: "Hurricane", cursive;
+  font-size: 100pt;
+  padding: 0%;
+  margin: 0%;
+}
+
+#flower-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+}
