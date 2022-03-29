@@ -1,0 +1,18 @@
+body{
+    margin:5vw;
+    background-color: darkcyan;
+}
+
+.bold{
+    font-weight: bold;
+    color:brown;
+}
+
+ul{
+    list-style-type: none;
+}
+
+img{
+    width:auto;
+    height:50vh;
+}
