@@ -1,0 +1,26 @@
+body{
+    margin:5%;
+    display: flex;
+    justify-content: center;
+}
+div{
+
+    margin-top: 5%;
+}
+img{
+    height:100vh;
+}
+a{
+    font-size: 20pt;
+    color:black;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.draft-img{
+    height:30vh;
+}
