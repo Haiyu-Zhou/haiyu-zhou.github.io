@@ -1,0 +1,176 @@
+/*@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url("assets/fonts/Inter Web/Inter-Thin.woff2") format("woff2"),
+    url("assets/fonts/Inter Web/Inter-Thin.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Geometria";
+  src: url("assets/fonts/Geometria/Geometria-Light.woff2") format("woff2"),
+    url("assets/fonts/Geometria/Geometria-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+*/
+
+/*Noto Sans*/
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('NotoSans-Italic.woff2') format('woff2'),
+      url('NotoSans-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('NotoSans-BoldItalic.woff2') format('woff2'),
+      url('NotoSans-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('NotoSans.woff2') format('woff2'),
+      url('NotoSans.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('NotoSans-Bold.woff2') format('woff2'),
+      url('NotoSans-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+/*Noto Sans Traditional Chinese*/
+@font-face {
+  font-family: 'NotoSansTC-Regular';
+  src: url('assets/fonts/NotoSansTC/NotoSansTC-Regular-Alphabetic.woff2') format('woff2'),
+      url('assets/fonts/NotoSansTC/NotoSansTC-Regular-Alphabetic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+
+
+
+
+
+/*Styles*/
+*{
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans';
+    font-weight: normal;
+  font-style: normal;
+    font-size: 80pt;
+    margin: 0%;
+}
+
+a {
+    color:black;
+}
+a:hover{
+  text-decoration: none;
+}
+
+.studio-projects:hover{
+  color:rgb(233, 26, 12);
+}
+
+.lab-assignments:hover{
+  color:rgb(41, 53, 207);
+}
+
+.lab-workshops:hover{
+  color:rgb(235, 191, 46);
+}
+
+
+#top-bar{
+  font-size: 20pt;
+  position:sticky;
+  top:1%;
+  text-align: center;
+  color:black;
+  
+  /*transform: rotate(90deg);mix-blend-mode: difference;*/
+}
+
+
+#Studio-text{
+margin-top: 50px;
+}
+
+#Lab-text{
+  margin-top: 50px;
+  }
+
+  #title{
+    position:relative;
+    margin-top: -100px;
+    line-height: 1;
+    font-size: 60pt;
+  }
+
+  #Studio-title{
+    font-size: 130pt;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  #Lab-title{
+    font-size: 130pt;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  p{
+    display: inline-block;
+    text-decoration: underline;
+  }
+
+  p:hover{
+    text-decoration: none;
+    color:rgb(136, 47, 209);
+  }
+
+  ul{
+    margin:0;
+    padding: 0;
+  }
+
+
+
+
+
+/*
+  div{
+    display: inline-block;
+  }
+  a{
+    display: flex;
+  }
+
+
+make margin-top and margin-bottom of the elements the same
+
+
+*/
