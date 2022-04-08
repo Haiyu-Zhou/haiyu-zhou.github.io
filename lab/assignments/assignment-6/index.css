@@ -1,0 +1,75 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+div#static {
+  width: 80vw;
+
+  color: rgb(183, 45, 45);
+  overflow-y: scroll;
+}
+div#fixed {
+  position: fixed;
+}
+
+div#static h {
+  width: 80vw;
+  font-family: "Rubik Glitch", cursive;
+  color: rgb(48, 118, 138);
+  font-size: 60pt;
+}
+
+div#static p {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  font-family: "Rubik Glitch", cursive;
+  font-size: 50pt;
+}
+div#static::-webkit-scrollbar {
+  display: none;
+}
+
+div#animation {
+  width: 80vw;
+  position: fixed;
+  animation: auto-scroll 60s linear infinite;
+}
+div#animation:hover {
+  opacity: 30%;
+}
+
+div#illustrations {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Times New Roman", Times, serif;
+}
+div.container {
+  padding: 2%;
+  border: 1px solid #999;
+  border-radius: 6px;
+  margin: 2%;
+  width: 46%;
+  background-color: #f1efef;
+}
+
+img.image {
+  max-width: 100%;
+}
+
+@keyframes auto-scroll {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: -1500%;
+  }
+}
