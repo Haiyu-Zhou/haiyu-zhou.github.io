@@ -1,12 +1,18 @@
+*{
+    box-sizing: border-box;
+}
+
 body{
+    margin:0;
     margin:0;
     width:100cw;
     height:9000px;
 }
+
 main{
-    display: flex;
-    flex-direction: row;
+   
 }
+
 img{
     width:300px;
     height:auto;
@@ -17,7 +23,12 @@ img:hover{
 }
 
 div#head, div#body, div#hands, div#feet{
-width:30vw;
+padding: 0;
+margin:0;
+position: absolute;
+width:100vw;
+display: flex;
+flex-direction: row;
 }
 
 div#static{
@@ -31,4 +42,29 @@ img#body-bkg{
     left:-1900px;
     z-index: -99;
     opacity: 100%;
+}
+
+
+div#head{
+    height:30vh;
+    top:200px;
+    left:0px;
+}
+
+div#body{
+    height:30vh;
+    top:2200px;
+    left:0px;
+}
+
+div#hands{
+    height:30vh;
+    top:4200px;
+    left:1000px;
+}
+
+div#feet{
+    height:30vh;
+    top:8200px;
+    left:0px;
 }
