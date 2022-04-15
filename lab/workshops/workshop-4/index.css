@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:5%;
+}
+div#application{
+    display: flex;
+    flex-direction: row;
+}
+
+div#name{
+    width:10vw;
+}
+div#description{
+    width:30vw;
+}
+div#attack{
+    width:10vw;
+    line-height: 3;
+}

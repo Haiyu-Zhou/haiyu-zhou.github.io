@@ -26,6 +26,10 @@ jsonPromise.then((data) => {
         //create container element
         const containerElement= document.createElement('div')
         containerElement.classList.add('container')
+        const randomLeft = Math.random() * window.innerWidth
+        containerElement.style.position = 'absolute'
+        containerElement.style.left = randomLeft + "px"
+        containerElement.style.top = "0px"
         //create image element
         const imageElement = document.createElement('img')
         imageElement.classList.add('image' , 'head-image')
@@ -62,5 +66,5 @@ console.log(getRandomPosition)
 //position the images with %
 
 let headImage = document.getElementsByClassName("head-image");
-let changePosition = headImage.getBoundingClientRect();
+// let changePosition = headImage.getBoundingClientRect();
 

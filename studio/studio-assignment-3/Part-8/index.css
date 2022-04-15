@@ -5,8 +5,9 @@
 body{
     margin:0;
     margin:0;
-    width:100cw;
+    width:100vw;
     height:9000px;
+    overflow-x: hidden;
 }
 
 main{
@@ -37,13 +38,17 @@ div#static{
 
 img#body-bkg{
     height: 9000px;
-    width: auto;
+    width: 3042px;
     position: absolute;
-    left:-1900px;
+    left:-1521px;
     z-index: -99;
     opacity: 100%;
 }
 
+/*
+the body figure is 9000 px * 3042 px
+on the screen it shows 1521 px
+*/
 
 div#head{
     height:30vh;
