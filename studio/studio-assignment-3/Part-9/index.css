@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    margin:0;
+    width:100vw;
+    height:9000px;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+  }
+
+main{
+   
+}
+
+img{
+    width:400px;
+    height:auto;
+    opacity: 30%;
+}
+img:hover{
+    opacity: 100%;
+}
+
+div#head, div#body, div#hands, div#feet{
+padding: 0;
+margin:0;
+position: absolute;
+width:100vw;
+display: flex;
+flex-direction: row;
+}
+
+div#static{
+    margin-right: 5%;
+}
+
+img#body-bkg{
+    height: 9000px;
+    width: 3042px;
+    position: absolute;
+    left:-1521px;
+    z-index: -99;
+    opacity: 100%;
+}
+
+/*
+the body figure is 9000 px * 3042 px
+on the screen it shows 1521 px
+*/
+
+div#head{
+    height:30vh;
+    top:200px;
+    left:0px;
+}
+
+div#body{
+    height:30vh;
+    top:2200px;
+    left:0px;
+}
+
+div#hands{
+    height:30vh;
+    top:4200px;
+    left:500px;
+}
+
+div#feet{
+    height:30vh;
+    top:8200px;
+    left:0px;
+}
+
+div#about-container{
+    position: fixed;
+    margin:0;
+    padding:0;
+    top:0px;
+    right:20px;
+    font-family: 'Roboto Mono', monospace;
+}
