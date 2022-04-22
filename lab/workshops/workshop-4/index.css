@@ -3,10 +3,17 @@
 }
 body{
     margin:5%;
+    background-image: url("assets/Elden-Ring-A-photo-shows-the-title-screen-even-if-scaled.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 div#application{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    background-color: beige;
+    opacity: 50%;
+    border-radius: 20px;
+    padding: 30px;
 }
 
 div#name{
