@@ -1,0 +1,22 @@
+h2{
+    font-family: 'Permanent Marker', cursive;
+}
+
+p{
+    font-family: 'Homemade Apple', cursive;
+    line-height: 90%;
+}
+
+body{
+    margin:0;
+    padding: 0;
+    background-image: url("assets/notebook.jpg");
+}
+
+main{
+    margin-left:20%;
+}
+
+div#input-feedback{
+    margin-top: 29px;
+}
