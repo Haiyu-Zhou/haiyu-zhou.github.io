@@ -1,6 +1,3 @@
-const list = ['1','2','3']
-
-
 let leftPawContainer = document.querySelector("#left-paw");
 let id = 1;
 const numberOfFrames = 4
