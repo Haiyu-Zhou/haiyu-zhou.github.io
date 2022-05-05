@@ -9,6 +9,9 @@ const headContainerElement = document.querySelector("#head");
 const bodyContainerElement = document.querySelector("#body");
 const handsContainerElement = document.querySelector("#hands");
 const feetContainerElement = document.querySelector("#feet");
+const designerName = document.querySelector("#designer");
+const collectorName = document.querySelector("#collector");
+const titleName = document.querySelector("title");
 
 //step 3: application
 //fetch the data
@@ -28,7 +31,7 @@ jsonPromise.then((data) => {
     const containerElement = document.createElement("div");
     containerElement.classList.add("container");
     const randomLeft = Math.random() * window.innerWidth * 0.8;
-    randomTop = Math.random() * window.innerWidth * 0.8;
+    const randomTop = Math.random() * window.innerWidth * 0.8;
     containerElement.style.position = "absolute";
     containerElement.style.left = randomLeft + "px";
     containerElement.style.top = randomTop + "px";
@@ -61,11 +64,21 @@ jsonPromise.then((data) => {
   }
 });
 
-const getRandomPosition = Math.random() * 100;
-console.log(getRandomPosition);
-//get a number range from 1 to 100
-//position the images with %
+const randomLeftD = Math.random() * window.innerWidth * 0.8;
+const randomTopD = Math.random() * window.innerWidth * 0.4;
+const randomLeftC = Math.random() * window.innerWidth * 0.8;
+const randomTopC = Math.random() * window.innerWidth * 0.4;
+const randomLeftT = Math.random() * window.innerWidth * 0.8;
+const randomTopT = Math.random() * window.innerWidth * 0.4;
 
-let headImage = document.getElementsByClassName("head-image");
-// let changePosition = headImage.getBoundingClientRect();
+designerName.style.position = "fixed";
+designerName.style.left = randomLeftD + "px";
+designerName.style.top = randomTopD + "px";
 
+collectorName.style.position = "fixed";
+collectorName.style.left = randomLeftC + "px";
+collectorName.style.top = randomTopC + "px";
+
+titleName.style.position = "fixed";
+titleName.style.left = randomLeftT + "px";
+titleName.style.top = randomTopT + "px";

@@ -80,3 +80,57 @@ document.addEventListener("keydown", (e) => {
     leftPawContainer = setInterval(changeVisibility, 500);
   }
 });
+
+
+// this works, but repeat itself every time I press the key
+document.addEventListener("keydown", (e) => {
+  if (!e.repeat) {
+    logMessage(`Key "${e.key}" pressed  [event: keydown]`);
+    if (e.code == 'KeyZ'){
+      const interval = setInterval(() => {
+        if (id === numberOfFrames) {
+          id = 0;
+        } else {
+          id = id + 1;
+        }
+        console.log(id);
+        let imageUrl = "assets/" + id + ".jpg";
+        leftPawContainer.setAttribute("src", imageUrl);
+        leftPawContainer.style.display = "block";
+      }, 500);
+    }
+  }
+  else {
+    logMessage(`Key "${e.key}" repeating  [event: keydown]`);
+  }
+  
+});
+
+
+clearInterval(interval);
+
+
+
+document.addEventListener("keydown", (e) => {
+  if (!e.repeat) {
+    logMessage(`Key "${e.key}" pressed  [event: keydown]`);
+    if (e.code == 'KeyZ'){
+      const interval = setInterval(() => {
+        if (id === numberOfFrames) {
+          id = 0;
+        } else {
+          id = id + 1;
+        }
+        console.log(id);
+        let imageUrl = "assets/" + id + ".jpg";
+        leftPawContainer.setAttribute("src", imageUrl);
+        leftPawContainer.style.display = "block";
+      }, 500);
+     
+    }
+  }
+  else {
+    logMessage(`Key "${e.key}" repeating  [event: keydown]`);
+  }
+  
+});
