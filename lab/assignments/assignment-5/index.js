@@ -27,3 +27,21 @@ setInterval(() => {
    
  }, 3000)
 
+
+ const newDate = new Date();
+ const currentDate = {
+  year: newDate.getFullYear(),
+  month: newDate.getMonth() + 1,
+  date: newDate.getDate(),
+};
+const yearContainer = document.querySelector("#year");
+const monthContainer = document.querySelector("#month");
+const dateContainer = document.querySelector("#date");
+
+yearContainer.innerHTML =  currentDate.year + "/";
+monthContainer.innerHTML =  currentDate.month +"/";
+dateContainer.innerHTML =  currentDate.date;
+
+
+
+

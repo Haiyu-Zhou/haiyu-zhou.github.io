@@ -6,8 +6,13 @@ body{
     background-image: url("assets/Elden-Ring-A-photo-shows-the-title-screen-even-if-scaled.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
 }
 div#application{
+    position: absolute;
     display: flex;
     flex-direction: column;
     background-color: beige;
@@ -25,4 +30,18 @@ div#description{
 div#attack{
     width:10vw;
     line-height: 3;
+}
+
+button{
+    display: block;
+    position: relative;
+}
+div#buttons{
+    position: absolute;
+    bottom: 10vh;
+    display: flex;
+    flex-direction: row;
+}
+body::-webkit-scrollbar {
+    display: none;
 }

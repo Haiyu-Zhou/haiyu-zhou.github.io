@@ -13,3 +13,10 @@ body {
   height: 100vh;
   text-align: center;
 }
+
+#time-container{
+  position: absolute;
+  top:10vh;
+  left:10vw;
+  font-size: 30pt;
+}
