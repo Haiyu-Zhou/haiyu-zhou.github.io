@@ -32,7 +32,7 @@ img#keyboard{
 }
 img#background{
     z-index: -5;
-    width: 130vw;
+    width: 150vw;
     position: fixed;
 }
 body::-webkit-scrollbar {
