@@ -32,7 +32,7 @@ img#keyboard{
 }
 img#background{
     z-index: -5;
-    width: 100vw;
+    height: 100vh;
     position: fixed;
 }
 body::-webkit-scrollbar {
@@ -48,4 +48,13 @@ body::-webkit-scrollbar {
 
   div#change{
     cursor: pointer;
+  }
+
+
+  @media screen and (max-width: 700px) {
+    img.paw-image{
+        height: 50vh;
+        position:absolute;
+        bottom: -100px;
+    }
   }
