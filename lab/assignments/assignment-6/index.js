@@ -44,3 +44,10 @@ jsonPromise.then((data) => {
     //recordsElement.innerHTML = data.records[0].id
    // illustrationContainerElement.appendChild(recordsElement)
 })
+
+const captionButton = document.querySelector("#turn-off");
+const caption = document.querySelector("#static");
+captionButton.addEventListener("click", () => {
+    console.log("hit the button to hide captions")
+caption.style.visibility = "hidden";
+})

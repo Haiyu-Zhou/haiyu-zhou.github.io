@@ -20,3 +20,20 @@ body {
   left:10vw;
   font-size: 30pt;
 }
+
+#static{
+  position: fixed;
+  bottom: 5vh;
+  right: 2vw;
+  font-size: 40pt;
+  width: 50vw;
+}
+
+@media only screen and (max-width: 900px) {
+  #static{
+    font-size: 20pt;
+  }
+  #flower-list {
+font-size: 50pt;
+  }
+}

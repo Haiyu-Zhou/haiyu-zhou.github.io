@@ -31,3 +31,11 @@ feedbackElement.innerHTML = "- " + value
 inputFeedbackElement.appendChild(feedbackElement)
 inputElement.value =""
 })
+
+const soundElement = document.querySelector("#sound");
+
+document.addEventListener('keydown' , (event) => {
+    if(event.key === "Enter") {
+        soundElement.innerHTML = "<audio controls src=\"assets/pencil.wav\" autoplay>";
+                            }
+})

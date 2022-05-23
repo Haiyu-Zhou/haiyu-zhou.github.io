@@ -62,3 +62,9 @@ div#info {
 div#dropdown:hover + div#info {
   visibility: visible;
 }
+
+@media only screen and (max-width: 900px) {
+  div#changing {
+    font-size: 60pt;
+  }
+}
