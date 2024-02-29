@@ -20,8 +20,8 @@
 /*Noto Sans*/
 @font-face {
   font-family: 'Noto Sans';
-  src: url('NotoSans-Italic.woff2') format('woff2'),
-      url('NotoSans-Italic.woff') format('woff');
+  src: url('assets/fonts/NotoSans/NotoSans-Italic.woff2') format('woff2'),
+      url('assets/fonts/NotoSans/NotoSans-Italic.woff') format('woff');
   font-weight: normal;
   font-style: italic;
   font-display: swap;
@@ -29,8 +29,8 @@
 
 @font-face {
   font-family: 'Noto Sans';
-  src: url('NotoSans-BoldItalic.woff2') format('woff2'),
-      url('NotoSans-BoldItalic.woff') format('woff');
+  src: url('assets/fonts/NotoSans/NotoSans-BoldItalic.woff2') format('woff2'),
+      url('assets/fonts/NotoSans/NotoSans-BoldItalic.woff') format('woff');
   font-weight: bold;
   font-style: italic;
   font-display: swap;
@@ -38,8 +38,8 @@
 
 @font-face {
   font-family: 'Noto Sans';
-  src: url('NotoSans.woff2') format('woff2'),
-      url('NotoSans.woff') format('woff');
+  src: url('assets/fonts/NotoSans/NotoSans.woff2') format('woff2'),
+      url('assets/fonts/NotoSans/NotoSans.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -47,8 +47,8 @@
 
 @font-face {
   font-family: 'Noto Sans';
-  src: url('NotoSans-Bold.woff2') format('woff2'),
-      url('NotoSans-Bold.woff') format('woff');
+  src: url('assets/fonts/NotoSans/NotoSans-Bold.woff2') format('woff2'),
+      url('assets/fonts/NotoSans/NotoSans-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -64,7 +64,12 @@
   font-display: swap;
 }
 
+/* Lustria*/
 
+@font-face {
+  font-family: 'Lustria';
+  src: url('assets/fonts/Lustria-Regular.ttf') format('ttf');
+}
 
 
 
@@ -77,12 +82,23 @@
 }
 
 body {
-    font-family: 'Noto Sans';
+    font-family: 'Lustria';
     font-weight: normal;
   font-style: normal;
     font-size: 80pt;
     margin: 0%;
+    background-color: black;
+    background-attachment: fixed;
+    height: 300vh;
 }
+
+div#background{
+  background-color: black;
+  position: absolute;
+  top:-5vh;
+  height: 100vh;
+}
+
 
 a {
     color:black;
@@ -91,16 +107,8 @@ a:hover{
   text-decoration: none;
 }
 
-.studio-projects:hover{
-  color:rgb(233, 26, 12);
-}
-
 .lab-assignments:hover{
-  color:rgb(41, 53, 207);
-}
-
-.lab-workshops:hover{
-  color:rgb(235, 191, 46);
+  color:rgb(11, 119, 190);
 }
 
 
@@ -108,10 +116,10 @@ a:hover{
   font-size: 20pt;
   position:sticky;
   top:1%;
-  text-align: center;
+  right:1%;
+  text-align: right;
   color:black;
-  
-  /*transform: rotate(90deg);mix-blend-mode: difference;*/
+  text-decoration: underline;
 }
 
 
@@ -123,12 +131,7 @@ margin-top: 50px;
   margin-top: 50px;
   }
 
-  #title{
-    position:relative;
-    margin-top: -100px;
-    line-height: 1;
-    font-size: 60pt;
-  }
+
 
   #Studio-title{
     font-size: 130pt;
@@ -149,28 +152,55 @@ margin-top: 50px;
 
   p:hover{
     text-decoration: none;
-    color:rgb(136, 47, 209);
   }
 
-  ul{
-    margin:0;
-    padding: 0;
-  }
-
-
-
-
-
-/*
-  div{
-    display: inline-block;
-  }
-  a{
+  #info{
+    position:relative;
+    margin-top: 0px;
+    line-height: 1;
+    height: 30vh;
+    width: 100vw;
+    background-color: black;
     display: flex;
+    flex-direction: row;
   }
 
+  .info-text{
+    text-decoration: none;
+    color:white;
+    margin: 0;
+    font-size: 20pt;
+  }
 
-make margin-top and margin-bottom of the elements the same
+  div#info-left{
+    display: flex;
+    flex-direction: column;
+  }
+  div#info-right{
+    margin-left: 5vw;
+    display: flex;
+    flex-direction: column;
+    
+  }
 
+  div.info-section{
+    margin: 2vh;
+    text-align: right;
+  }
 
-*/
+  div#section-1{
+    background-color: white;
+    z-index: 1000;
+    height:200vh;
+  }
+
+  a.info-text:hover{
+    color:rgb(11, 119, 190);
+  }
+
+  img.title-img{
+    position: relative;
+    height: 200px;
+    width: auto;
+    margin-top: 20px;
+  }

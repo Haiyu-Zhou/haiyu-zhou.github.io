@@ -1,0 +1,30 @@
+body{
+    background-attachment: fixed;
+    background-color: black;
+}
+img{
+    width: 100vw;
+    height:auto;
+}
+
+div{
+    position: fixed;
+}
+
+div#info{
+    width: 30vw;
+    top:5vh;
+    left: 5vw;
+}
+
+div#time{
+width: auto;
+right: 5vw;
+bottom: 5vh;
+}
+
+p{
+    color: rgb(196, 23, 23);
+    z-index: 1000;
+    font-size: 20pt;
+}
