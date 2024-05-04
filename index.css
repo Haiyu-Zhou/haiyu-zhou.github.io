@@ -89,7 +89,7 @@ body {
     margin: 0%;
     background-color: black;
     background-attachment: fixed;
-    height: 300vh;
+    height: 260vh;
 }
 
 div#background{
@@ -157,6 +157,7 @@ ul{
     margin: 0;
     font-size: 20pt;
     text-align: right;
+    line-height: 1.2;
   }
 
   div#info-left{
