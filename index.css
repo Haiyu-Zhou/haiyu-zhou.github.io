@@ -156,7 +156,7 @@ ul{
     color:white;
     margin: 0;
     font-size: 20pt;
-    text-align: right;
+    text-align: left;
     line-height: 1.2;
   }
 
@@ -205,4 +205,9 @@ ul{
 
   a.projects:hover + img#homepage-image{
   visibility: visible ;
+  }
+
+  p.section-title{
+    font-size: 20pt;
+    margin: 0;
   }

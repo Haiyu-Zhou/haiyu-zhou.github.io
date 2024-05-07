@@ -1,8 +1,8 @@
 //step 1: variables
-const airtableApiKey = "keyBaUp0xKPE8ASU2";
-const airtableDatabaseUrl =
-  "https://api.airtable.com/v0/app5dZBBB4148mWB9/Assets";
-const authenticatedUrl = airtableDatabaseUrl + "?api_key=" + airtableApiKey;
+const airtableBaseId = "app5dZBBB4148mWB9";
+const airtableTableName = "Assets";
+const airtableToken = "pat87gQHtuUOEgaH7.d115f398287d94236b4793fc4eb5b82e094ddcdce75f540403a7069dfb2dacaf";
+const airtableUrl = `https://api.airtable.com/v0/${airtableBaseId}/${airtableTableName}`;
 
 //step 2: get references to DOM
 const headContainerElement = document.querySelector("#head");
@@ -15,12 +15,15 @@ const titleName = document.querySelector("title");
 
 //step 3: application
 //fetch the data
-const fetchPromise = fetch(authenticatedUrl);
-const jsonPromise = fetchPromise.then((response) => {
-  return response.json();
-});
+fetch(airtableUrl, {
+  headers: {
+    Authorization: `Bearer ${airtableToken}`,
+  },
+})
+.then((response) => 
+  response.json())
 //get each set of images into their containers
-jsonPromise.then((data) => {
+.then((data) => {
   console.log(data);
   const records = data.records;
   for (let index = 0; index < records.length; index++) {
