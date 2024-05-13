@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grotesk Generator</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="shortcut icon" type="image/jpg" href="assets/icons/icon48.png" />
+    <!--<script src="index.js" type="text/javascript" defer></script>-->
+</head>
+
+<body>
+    <div class="tabs">
+        <a href="/index.html"> Grotesk Generator </a>
+        <a id="akzi-link" href="/grotesk-generator/"> Akzidenz Grotesk </a>
+        <a id="helvetica-link" href="/grotesk-generator/"> Helvetica </a>
+        <a id="arial-link" href="/grotesk-generator/"> Arial </a>
+        <a id="game" href="/grotesk-generator/">Spot the difference</a>
+    </div>
+    <div id="background-container">
+        <div id="fixed">
+        </div>
+    </div>
+    <script>
+    const fetchImages = async () => {
+    const randomImageIndex = Math.floor(Math.random() * 12) + 1;
+    const imagePath = `spot-the-difference/solid/${randomImageIndex}.svg`;
+
+    const image = document.createElement('img');
+    image.src = imagePath;
+    image.alt = 'Random Image';
+    
+    const fixedImageContainer = document.getElementById('fixed');
+    fixedImageContainer.appendChild(image);
+};
+document.addEventListener('DOMContentLoaded', fetchImages);
+    </script>
+</body>
+
+</html>

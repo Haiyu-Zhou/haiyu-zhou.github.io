@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grotesk Generator</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="shortcut icon" type="image/jpg" href="assets/icons/icon48.png" />
+</head>
+
+<body>
+    <div class="tabs">
+        <a href="/index.html"> Grotesk Generator </a>
+        <a id="akzi-link" href="/grotesk-generator/akzidenz-grotesk/"> Akzidenz Grotesk </a>
+        <a id="helvetica-link" href="/grotesk-generator/helvetica/"> Helvetica </a>
+        <a id="arial-link" href="/grotesk-generator/arial/index.html"> Arial </a>
+        <a id="game" href="/grotesk-generator/spot-the-difference/"> Spot the Difference </a>
+    </div>
+    <div id="background-container">
+        <div id="fixed"></div>
+        <div id="scroll"></div>
+    </div>
+
+
+    <script>
+        const categories = ['R', 'Q', 'C', 'G'];
+        const randomCategory = categories[Math.floor(Math.random() * categories.length)];
+        const imagesPath = `/grotesk-generator/assets/Letterform/${randomCategory}/`;
+        const fixedImageContainer = document.getElementById('fixed');
+        const imageGroup = document.getElementById('scroll');
+
+        const fetchImages = async () => {
+    const image1 = document.createElement('img');
+    image1.alt = 'Image 1';
+    image1.src = await getImage(imagesPath, 'image1.svg');
+    fixedImageContainer.appendChild(image1);
+
+    const image2 = document.createElement('img');
+    image2.alt = 'Image 2';
+    image2.src = await getImage(imagesPath, 'image2.svg');
+    imageGroup.appendChild(image2);
+
+    const image3 = document.createElement('img');
+    image3.alt = 'Image 3';
+    image3.src = await getImage(imagesPath, 'image3.svg');
+    imageGroup.appendChild(image3);
+};
+
+const getImage = async (path, imageName) => {
+    return new Promise(resolve => {
+        const imagePath = `${path}${imageName}`;
+        console.log('Image path:', imagePath);
+        resolve(imagePath);
+    });
+};
+
+document.addEventListener('DOMContentLoaded', fetchImages);
+
+function origin() {
+    window.moveTo(0, 0);
+}
+document.addEventListener('DOMContentLoaded', () => {
+    origin();
+});
+    </script>
+</body>
+
+</html>

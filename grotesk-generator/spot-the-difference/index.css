@@ -1,0 +1,67 @@
+@font-face {
+  font-family: helvetica;
+  src: url(../assets/Helvetica.ttc);
+}
+@font-face {
+  font-family: arial;
+  src: url(../assets/Arial.ttf);
+}
+@font-face {
+  font-family: akzidenz-grotesk;
+  src: url(../assets/AkzidenzGrotesk-Regular.otf);
+}
+p{
+    font-family: helvetica;
+    font-size: 20pt;
+}
+body{
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  width: 300vw;
+}
+
+div.tabs{
+  position: fixed;
+}
+a{
+  font-size: 20pt;
+  color: black;
+  text-decoration: none;
+  font-family: helvetica;
+}
+
+a#helvetica-link{
+  background-color: #FEC571;
+  font-family: helvetica;
+}
+a#akzi-link{
+  background-color: #4793AF;
+  font-family: akzidenz-grotesk;
+}
+a#arial-link{
+  background-color: #DD5746;
+  font-family: arial;
+}
+
+a:hover{
+  color: #8C342D;
+}
+
+
+a#helvetica-link:hover{
+  color: #FEC571;
+  background-color: white;
+}
+a#akzi-link:hover{
+  color: #4793AF;
+  background-color: white;
+}
+a#arial-link:hover{
+  color: #DD5746;
+  background-color: white;
+}
+
+img.letterform{
+  height: 100vh;
+}
