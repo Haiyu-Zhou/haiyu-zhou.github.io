@@ -1,0 +1,242 @@
+/*@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url("assets/fonts/Inter Web/Inter-Thin.woff2") format("woff2"),
+    url("assets/fonts/Inter Web/Inter-Thin.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Geometria";
+  src: url("assets/fonts/Geometria/Geometria-Light.woff2") format("woff2"),
+    url("assets/fonts/Geometria/Geometria-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+*/
+
+/*Noto Sans*/
+/*
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('assets/fonts/NotoSans/NotoSans-Italic.woff2') format('woff2'),
+      url('assets/fonts/NotoSans/NotoSans-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('assets/fonts/NotoSans/NotoSans-BoldItalic.woff2') format('woff2'),
+      url('assets/fonts/NotoSans/NotoSans-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('assets/fonts/NotoSans/NotoSans.woff2') format('woff2'),
+      url('assets/fonts/NotoSans/NotoSans.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('assets/fonts/NotoSans/NotoSans-Bold.woff2') format('woff2'),
+      url('assets/fonts/NotoSans/NotoSans-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+*/
+
+/* Lustria*/
+/*
+@font-face {
+  font-family: 'Lustria';
+  src: url('assets/fonts/Lustria-Regular.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Akzidenz Grotesk';
+  src: url('assets/fonts/AkzidenzGrotesk/akzidenzgrotesk-medium-webfont.woff2') format('woff2'),
+      url('assets/fonts/AkzidenzGrotesk/akzidenzgrotesk-medium-webfont.woff') format('woff');
+  font-weight: medium;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Akzidenz Grotesk';
+  src: url('assets/fonts/AkzidenzGrotesk/akzidenz-grotesk-bold-webfont.woff2') format('woff2'),
+      url('assets/fonts/AkzidenzGrotesk/akzidenz-grotesk-bold-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+*/
+
+
+/*Noto Sans Traditional Chinese*/
+@font-face {
+  font-family: 'NotoSansTC-Regular';
+  src: url('assets/fonts/NotoSansTC/NotoSansTC-Regular-Alphabetic.woff2') format('woff2'),
+      url('assets/fonts/NotoSansTC/NotoSansTC-Regular-Alphabetic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Akzidenz Grotesk */
+@font-face {
+  font-family: 'Akzidenz Grotesk';
+  src: url('assets/fonts/AkzidenzGrotesk/akzidenzgrotesk-regular-webfont.woff2') format('woff2'),
+      url('assets/fonts/AkzidenzGrotesk/akzidenzgrotesk-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+/*Styles*/
+*{
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Akzidenz Grotesk';
+    font-weight: normal;
+  font-style: normal;
+    font-size: 80pt;
+    margin: 0%;
+    background-color: black;
+    background-attachment: fixed;
+    height: 260vh;
+}
+
+div#background{
+  background-color: black;
+  position: absolute;
+  top:-5vh;
+  height: 100vh;
+}
+
+
+a {
+    color:black;
+}
+a:hover{
+  text-decoration: none;
+  color:rgb(11, 119, 190);
+}
+
+
+
+#top-bar{
+  font-size: 15pt;
+  position:sticky;
+  top:1%;
+  right:1%;
+  text-align: right;
+  color:black;
+  text-decoration: underline;
+}
+
+ul{
+  list-style-type: none;
+}
+
+.sub-section{
+  margin-top: 50px;
+}
+
+  #print-title{
+    font-size: 15pt;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  #digital-title{
+    font-size: 130pt;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  #info{
+    position:relative;
+    margin-top: 0px;
+    line-height: 1;
+    height: 30vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .info-text{
+    text-decoration: none;
+    color:white;
+    margin: 0;
+    font-size: 15pt;
+    text-align: left;
+    line-height: 1.2;
+  }
+
+  div#info-left{
+    display: flex;
+    flex-direction: column;
+  }
+  div#info-right{
+    margin-left: 5vw;
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  div.info-section{
+    margin: 2vh;
+    text-align: right;
+  }
+
+  div#section-1{
+    background-color: white;
+    z-index: 1000;
+    height:200vh;
+  }
+
+  #more-info:hover{
+    color:rgb(11, 119, 190);
+    cursor: pointer;
+  }
+
+  img.title-img{
+    position: relative;
+    height: 200px;
+    width: auto;
+    margin-top: 20px;
+  }
+  img#homepage-image{
+    position: fixed;
+    width: 30vw;
+    height: auto;
+    top:20vh;
+    right:10vw;
+    z-index: 100;
+    visibility: hidden;
+  }
+
+  a.projects:hover + img#homepage-image{
+  visibility: visible ;
+  }
+
+  p.section-title{
+    font-size: 15pt;
+    margin: 0;
+  }
