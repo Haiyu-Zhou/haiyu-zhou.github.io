@@ -1,63 +1,116 @@
-body{
-    font-family: 'Lustria';
+/*Noto Sans Traditional Chinese*/
+@font-face {
+    font-family: "NotoSansTC-Regular";
+    src: url("assets/fonts/NotoSansTC/NotoSansTC-Regular-Alphabetic.woff2")
+        format("woff2"),
+      url("assets/fonts/NotoSansTC/NotoSansTC-Regular-Alphabetic.woff")
+        format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  /* Akzidenz Grotesk */
+  @font-face {
+    font-family: "Akzidenz Grotesk";
+    src: url("/assets/fonts/AkzidenzGrotesk/akzidenzgrotesk-regular-webfont.woff2")
+        format("woff2"),
+      url("/assets/fonts/AkzidenzGrotesk/akzidenzgrotesk-regular-webfont.woff")
+        format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  /*Styles*/
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Akzidenz Grotesk";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 15pt;
+    margin: 0%;
+    background-color: black;
     background-attachment: fixed;
-    background-color: white;
-    padding: 0;
-    margin: 0;
-}
-img{
-width: 100vw;
-height:auto;
-left: 0;
-padding:0;
-margin:0;
-margin-bottom: 20vh;
-}
+    height: 260vh;
 
-img.last-image{
-    margin-bottom: 0;
-}
-
-div.info-tab{
-width: 100vw;
-position: fixed;
-top: 0;
-left: 0;
-display: flex;
-flex-direction: row;
-padding: 1%;
-}
-
-a{
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    font-size: 20pt;
-    mix-blend-mode: exclusion;
-}
-a:hover{
-    text-decoration: none;
-    color:rgb(11, 119, 190);
+  }
+  div.info-tab{
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    padding: 1%;
+    z-index: 1000;
+    }
+    a{
+        color: white;
+        text-decoration: none;
+    }
+  @keyframes effect-1 {
+    0% {
+      color: white;
+    }
+  
+    100% {
+      color: rgb(11, 119, 190);
+    }
   }
 
-div.tab{
+  a:hover {
+    text-decoration: none;
+    animation: effect-1 0.15s linear;
+    animation-fill-mode: forwards;
+  }
+  div.tab{
     width: 30vw;
 }
-
-div#info{
-    position: relative;
+  
+  
+  .photo {
     margin-top: 10vh;
-    margin-left: 1%;
-}
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
-div#time{
-width: auto;
-right: 5vw;
-bottom: 5vh;
-position: fixed;
-}
+    align-items: center;
+    justify-content: center;
+  }
+  .photo img{
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - 60px);
+    margin-inline: 30px;
+    margin-bottom: 80px;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    color: black;
+  }
 
-p{
-    color: rgb(0, 0, 0);
-    z-index: 1000;
-    font-size: 20pt;
-}
+  @media only screen and (max-width: 768px) {
+    .info-text {
+      font-size: 12pt;
+    }
+    .photo {
+      align-items: center;
+      justify-content: center;
+      padding: 5%;
+      padding-top: 10%;
+    }
+  
+    .photo img {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      margin-bottom: 30px;
+      position: relative;
+      overflow: hidden;
+    }
+  }
+  

@@ -1,8 +1,10 @@
 /*Noto Sans Traditional Chinese*/
 @font-face {
-  font-family: 'NotoSansTC-Regular';
-  src: url('assets/fonts/NotoSansTC/NotoSansTC-Regular-Alphabetic.woff2') format('woff2'),
-      url('assets/fonts/NotoSansTC/NotoSansTC-Regular-Alphabetic.woff') format('woff');
+  font-family: "NotoSansTC-Regular";
+  src: url("assets/fonts/NotoSansTC/NotoSansTC-Regular-Alphabetic.woff2")
+      format("woff2"),
+    url("assets/fonts/NotoSansTC/NotoSansTC-Regular-Alphabetic.woff")
+      format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -10,130 +12,169 @@
 
 /* Akzidenz Grotesk */
 @font-face {
-  font-family: 'Akzidenz Grotesk';
-  src: url('assets/fonts/AkzidenzGrotesk/akzidenzgrotesk-regular-webfont.woff2') format('woff2'),
-      url('assets/fonts/AkzidenzGrotesk/akzidenzgrotesk-regular-webfont.woff') format('woff');
+  font-family: "Akzidenz Grotesk";
+  src: url("assets/fonts/AkzidenzGrotesk/akzidenzgrotesk-regular-webfont.woff2")
+      format("woff2"),
+    url("assets/fonts/AkzidenzGrotesk/akzidenzgrotesk-regular-webfont.woff")
+      format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
-
 /*Styles*/
-*{
+* {
   box-sizing: border-box;
 }
 
 body {
-    font-family: 'Akzidenz Grotesk';
-    font-weight: normal;
+  font-family: "Akzidenz Grotesk";
+  font-weight: normal;
   font-style: normal;
-    font-size: 80pt;
-    margin: 0%;
-    background-color: black;
-    background-attachment: fixed;
-    height: 200vh;
+  font-size: 15pt;
+  margin: 0%;
+  background-color: black;
+  background-attachment: fixed;
+  height: 260vh;
 }
 
-div#background{
+div#background {
   background-color: black;
   position: absolute;
-  top:-5vh;
-  height: 70vh;
+  top: -5vh;
+  height: 100vh;
 }
-@keyframes effect {
+@keyframes effect-1 {
   0% {
-      color: white;
+    color: white;
   }
 
   100% {
-     color: rgb(11, 119, 190);
+    color: rgb(11, 119, 190);
   }
 }
-a:hover{
+@keyframes effect-2 {
+  0% {
+    color: black;
+  }
+
+  100% {
+    color: rgb(11, 119, 190);
+  }
+}
+a:hover {
   text-decoration: none;
-  animation: effect 0.15s linear;
-  animation-fill-mode:forwards;
+  animation: effect-1 0.15s linear;
+  animation-fill-mode: forwards;
 }
 
-#top-bar{
+#top-bar {
   font-size: 15pt;
-  position:sticky;
-  top:1%;
-  right:1%;
+  position: sticky;
+  top: 1%;
+  right: 1%;
   text-align: right;
-  color:black;
+  color: black;
   text-decoration: underline;
 }
 
-  #print-title{
-    font-size: 15pt;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-
-  #digital-title{
-    font-size: 130pt;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-
-  #info{
-    position:relative;
-    margin-top: 0px;
-    line-height: 1;
-    height: 30vh;
-    width: 100vw;
-    background-color: black;
-    display: flex;
-    flex-direction: row;
-  }
-
-  .info-text{
-    text-decoration: none;
-    color:white;
-    margin: 0;
-    font-size: 15pt;
-    text-align: left;
-    line-height: 1.2;
-  }
-
-  div#info-left{
-    display: flex;
-    flex-direction: column;
-  }
-  div#info-right{
-    margin-left: 5vw;
-    display: flex;
-    flex-direction: column;
-    
-  }
-
-  div.info-section{
-    margin: 2vh;
-    text-align: right;
-  }
-
-div#project-background{
-  background-color: white;
-  z-index: 1000;
-  height:200vh;
+#info {
+  position: relative;
+  margin: 1%;
+  line-height: 1;
+  height: 30vh;
+  width: 100vw;
+  background-color: black;
+display: flex;
+flex-direction: row;
 }
 
-  .projects {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding:3%;
-  }
+.info-text {
+  text-decoration: none;
+  color: white;
+  margin: 0;
+  font-size: 15pt;
+  text-align: left;
+  line-height: 1.2;
+}
 
-  .projects a {
-    display: flex;
-    flex-direction: column;
-    width: calc(50% - 20px); /* Each image takes 50% of the container width with a small gap */
-    margin-bottom: 40px; /* Adds some spacing between rows */
-    position: relative;
-    overflow: hidden;
+div#info-left {
+  display: flex;
+  flex-direction: column;
+ width: 33%;
+}
+div#info-right {
+  display: flex;
+  flex-direction: column;
+  margin-left: 17%;
+  width: 33%;
+}
+
+div.info-section {
+  text-align: right;
+}
+
+#photography div{
+width: 33%;
+justify-content: right;
+}
+
+#photography a{
+  color: white;
+  text-decoration: none;
+}
+
+div#project-background {
+  background-color: white;
+  z-index: 1000;
+  height: 300vh;
+}
+div.index {
+  position: fixed;
+  margin-top: 5%;
+  margin-right: 5%;
+  display: flex;
+  flex-direction: column;
+  width: 15vw;
+  padding: 2%;
+  display: none;
+}
+.index a {
+  color: black;
+  text-decoration: none;
+}
+.index a:hover {
+  animation: effect-2 0.15s linear;
+  animation-fill-mode: forwards;
+}
+.drop-down-list {
+  display: none;
+}
+.index:hover ~ .drop-down-list {
+  display: block;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 3%;
+  align-items: center;
+  justify-content: center;
+}
+.projects a {
+  display: flex;
+  flex-direction: column;
+  width: 80%; /* calc(50% - 20px) */
+  margin-bottom: 80px;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  color: black;
+}
+.projects a:hover {
+  animation: effect-2 0.15s linear;
+  animation-fill-mode: forwards;
 }
 
 .projects img {
@@ -145,10 +186,9 @@ div#project-background{
 
 .projects a:hover img {
   opacity: 0.5;
- 
 }
 
-.projects a::before{
+.projects a::before {
   content: "";
   position: absolute;
   top: 0;
@@ -160,33 +200,27 @@ div#project-background{
   z-index: 1;
 }
 
-
 .projects a:hover::before {
   opacity: 1; /* Show the blue square on hover */
 }
 
-
-
-
-
-  @media only screen and (max-width: 768px) {
-    .info-text{
-      font-size: 12pt;
-    }
-    .projects {
+@media only screen and (max-width: 768px) {
+  .info-text {
+    font-size: 12pt;
+  }
+  .projects {
     align-items: center;
     justify-content: center;
     padding: 5%;
     padding-top: 10%;
-    }
+  }
 
-    .projects a {
-      display: flex;
-      flex-direction: column;
-      width: 90%; 
-      margin-bottom: 30px;
-      position: relative;
-      overflow: hidden;
+  .projects a {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
   }
-  
-  }
+}
