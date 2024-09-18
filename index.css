@@ -127,7 +127,7 @@ justify-content: right;
 div#project-background {
   background-color: white;
   z-index: 1000;
-  height: 300vh;
+  height: 500vh;
 }
 div.index {
   position: fixed;
@@ -205,8 +205,23 @@ div.index {
 }
 
 @media only screen and (max-width: 768px) {
+  a{
+    font-size: 12pt;
+  }
+  #info{
+    display: block;
+    margin: 3%;
+  }
+
   .info-text {
     font-size: 12pt;
+    width: 60vw;
+  }
+  #info-right{
+    position: absolute;
+    display: block;
+    top: 0%;
+    right: 0;
   }
   .projects {
     align-items: center;
