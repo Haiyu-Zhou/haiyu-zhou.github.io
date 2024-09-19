@@ -39,7 +39,10 @@ a{
     color: rgb(0, 0, 0);
     text-decoration: none;
     font-size: 15pt;
-    mix-blend-mode: exclusion;
+}
+
+span{
+    font-size: 15pt;
 }
 @keyframes effect {
     0% {
@@ -96,5 +99,8 @@ p{
         margin-top: 10vh;
         width: 80%;
         margin-bottom: 10vh;
+    }
+    span{
+        font-size: 12pt;
     }
   }
