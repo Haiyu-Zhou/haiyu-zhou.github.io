@@ -27,6 +27,11 @@
   box-sizing: border-box;
 }
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Akzidenz Grotesk";
   font-weight: normal;
@@ -127,7 +132,7 @@ justify-content: right;
 div#project-background {
   background-color: white;
   z-index: 1000;
-  height: 500vh;
+  height: auto;
 }
 div.index {
   position: fixed;
