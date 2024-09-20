@@ -19,6 +19,7 @@ height:auto;
 left: 0;
 padding:0;
 margin:0;
+display: block;
 }
 
 img.last-image{
@@ -41,6 +42,7 @@ a{
     font-size: 15pt;
     mix-blend-mode: exclusion;
 }
+
 @keyframes effect {
     0% {
         color: black;
