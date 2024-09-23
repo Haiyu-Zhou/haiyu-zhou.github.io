@@ -14,7 +14,7 @@ body{
     margin: 0;
 }
 img{
-width: 100vw;
+width: 80vw;
 height:auto;
 left: 0;
 padding:0;
@@ -41,6 +41,12 @@ a{
     text-decoration: none;
     font-size: 15pt;
     mix-blend-mode: exclusion;
+}
+
+.images{
+    position: relative;
+    left: 10%;
+z-index: -10;
 }
 
 @keyframes effect {
