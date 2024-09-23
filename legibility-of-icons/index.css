@@ -43,6 +43,13 @@ a{
     mix-blend-mode: exclusion;
 }
 
+img#small{
+    position: relative;
+    width: 50vw;
+    left: 40%;
+    margin-bottom: 10vh;
+    margin-top: -30vh;
+}
 @keyframes effect {
     0% {
         color: black;

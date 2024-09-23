@@ -34,6 +34,7 @@ left: 0;
 display: flex;
 flex-direction: row;
 padding: 1%;
+z-index: 100;
 }
 
 a{
@@ -42,7 +43,55 @@ a{
     font-size: 15pt;
     mix-blend-mode: exclusion;
 }
+.image-container {
+    position: relative;
+    width: 80vw; /* Adjust the width as needed */
+    overflow: hidden;
+    left: 10vw;
+    margin-bottom: 10vh;
+  }
+  
+  .scroll-wrapper {
+    display: flex; 
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .scroll-wrapper img {
+    width: 80vw; /* Each image should take up the full container width */
+    height: auto; /* Adjust the height as needed */
+    object-fit: cover;
+  }
+  
+  /* Styles for the scroll button */
+  .scroll-button {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: arrow_back;
+  }
+  
+  .scroll-button.right {
+    right: 0;
+  }
+ 
+  .scroll-button.left {
+    left: 0;
+  }
 
+  .scroll-button.left:hover {
+    cursor: url('assets/arrow_back_39dp_000000_FILL0_wght100_GRAD0_opsz40.svg'), auto; /* Replace with your left arrow image */
+  }
+  
+  /* Change cursor to right arrow on right button hover */
+  .scroll-button.right:hover {
+    cursor: url('assets/arrow_forward_39dp_000000_FILL0_wght100_GRAD0_opsz40.svg'), auto; /* Replace with your right arrow image */
+  }
 @keyframes effect {
     0% {
         color: black;
@@ -82,6 +131,12 @@ p{
     font-size: 15pt;
 }
 
+.images{
+  margin-bottom: 10vh;
+}
+img#gif{
+  visibility: hidden;
+}
 @media only screen and (max-width: 768px) {
     div.info-tab{
         padding: 3%;
@@ -98,6 +153,12 @@ p{
         margin-top: 10vh;
         width: 80%;
         margin-bottom: 10vh;
+    }
+    .image-container{
+      display: none;
+    }
+    img#gif{
+      visibility: visible;
     }
   }
   
