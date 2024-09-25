@@ -50,6 +50,7 @@ img#small{
     margin-bottom: 10vh;
     margin-top: -30vh;
 }
+
 @keyframes effect {
     0% {
         color: black;
@@ -88,7 +89,12 @@ p{
     z-index: 1000;
     font-size: 15pt;
 }
-
+.text{
+    position: relative;
+    margin-left: 55%;
+    width: 40%;
+    margin-bottom: 10vh;
+}
 @media only screen and (max-width: 768px) {
     div.info-tab{
         padding: 3%;
@@ -100,6 +106,13 @@ p{
         font-size: 12pt;
     }
     div#info{
+        position: relative;
+        margin-left: 3%;
+        margin-top: 10vh;
+        width: 80%;
+        margin-bottom: 10vh;
+    }
+    .text{
         position: relative;
         margin-left: 3%;
         margin-top: 10vh;

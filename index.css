@@ -209,6 +209,11 @@ div.index {
   opacity: 1; /* Show the blue square on hover */
 }
 
+img.portrait-image{
+  width: 40vw;
+  justify-content: center;
+}
+
 @media only screen and (max-width: 768px) {
   a{
     font-size: 12pt;
