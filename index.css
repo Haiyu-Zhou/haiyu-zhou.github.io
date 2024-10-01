@@ -38,27 +38,18 @@ body {
   font-style: normal;
   font-size: 15pt;
   margin: 0%;
-  background-color: black;
+  background-color: rgb(255, 255, 255);
   background-attachment: fixed;
   height: 260vh;
 }
 
 div#background {
-  background-color: black;
+  background-color: rgb(255, 255, 255);
   position: absolute;
   top: -5vh;
   height: 100vh;
 }
-@keyframes effect-1 {
-  0% {
-    color: white;
-  }
-
-  100% {
-    color: rgb(11, 119, 190);
-  }
-}
-@keyframes effect-2 {
+@keyframes effect {
   0% {
     color: black;
   }
@@ -69,7 +60,7 @@ div#background {
 }
 a:hover {
   text-decoration: none;
-  animation: effect-1 0.15s linear;
+  animation: effect 0.15s linear;
   animation-fill-mode: forwards;
 }
 
@@ -89,14 +80,13 @@ a:hover {
   line-height: 1;
   height: 30vh;
   width: 100vw;
-  background-color: black;
 display: flex;
 flex-direction: row;
 }
 
 .info-text {
   text-decoration: none;
-  color: white;
+  color: rgb(0, 0, 0);
   margin: 0;
   font-size: 15pt;
   text-align: left;
@@ -125,7 +115,7 @@ justify-content: right;
 }
 
 #photography a{
-  color: white;
+  color: black;
   text-decoration: none;
 }
 
@@ -149,7 +139,7 @@ div.index {
   text-decoration: none;
 }
 .index a:hover {
-  animation: effect-2 0.15s linear;
+  animation: effect 0.15s linear;
   animation-fill-mode: forwards;
 }
 .drop-down-list {
@@ -170,7 +160,7 @@ div.index {
 .projects a {
   display: flex;
   flex-direction: column;
-  width: 80%; /* calc(50% - 20px) */
+  width: 80%; /* calc(50% - 20px), 80% */
   margin-bottom: 80px;
   position: relative;
   overflow: hidden;
