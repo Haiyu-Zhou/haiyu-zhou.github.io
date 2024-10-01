@@ -1,0 +1,150 @@
+/*Noto Sans Traditional Chinese*/
+@font-face {
+    font-family: "NotoSansTC-Regular";
+    src: url("assets/fonts/NotoSansTC/NotoSansTC-Regular-Alphabetic.woff2")
+        format("woff2"),
+      url("assets/fonts/NotoSansTC/NotoSansTC-Regular-Alphabetic.woff")
+        format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  /* Akzidenz Grotesk */
+  @font-face {
+    font-family: "Akzidenz Grotesk";
+    src: url("/assets/fonts/AkzidenzGrotesk/akzidenzgrotesk-regular-webfont.woff2")
+        format("woff2"),
+      url("/assets/fonts/AkzidenzGrotesk/akzidenzgrotesk-regular-webfont.woff")
+        format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  /*Styles*/
+  * {
+    box-sizing: border-box;
+    color: white;
+  }
+  
+  body {
+    font-family: "Akzidenz Grotesk";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 15pt;
+    margin: 0%;
+    background-color: black;
+    background-attachment: fixed;
+    height: 260vh;
+
+  }
+  div.info-tab{
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    padding: 1%;
+    z-index: 1000;
+    }
+    a{
+        color: white;
+        text-decoration: none;
+    }
+  @keyframes effect-1 {
+    0% {
+      color: white;
+    }
+  
+    100% {
+      color: rgb(11, 119, 190);
+    }
+  }
+
+  a:hover {
+    text-decoration: none;
+    animation: effect-1 0.15s linear;
+    animation-fill-mode: forwards;
+  }
+  div.tab{
+    width: 25vw;
+}
+
+div.index{
+  position: fixed;
+
+  top: 10vh;
+  left: 1vw;
+
+}
+  ul{
+    list-style: none;
+  }
+  
+  .photo {
+    width: 70vw;
+    position: absolute;
+    right: 1%;
+    margin-top: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+  }
+  .photo img{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-inline: 30px;
+    margin-bottom: 80px;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    color: black;
+  }
+  #current-page{
+    color:rgb(11, 119, 190);
+  }
+  @media only screen and (max-width: 768px) {
+    .info-text {
+      font-size: 12pt;
+    }
+    .photo {
+      align-items: center;
+      justify-content: center;
+      padding: 5%;
+      padding-top: 10%;
+    }
+  
+    .photo img {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      margin-bottom: 30px;
+      position: relative;
+      overflow: hidden;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    div.info-tab{
+        padding: 3%;
+        }
+    a{
+      font-size: 12pt;
+    }
+    p{
+        font-size: 12pt;
+    }
+    div#info{
+        position: relative;
+        margin-left: 3%;
+        margin-top: 10vh;
+        width: 80%;
+        margin-bottom: 10vh;
+    }
+  }
+  

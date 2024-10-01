@@ -1,13 +1,10 @@
-const moreInfo = document.getElementById('more-info');
-const showUp = document.getElementById('show-up');
+const scrollButton = document.getElementById("scroll-button");
 
-
-
-moreInfo.addEventListener("click", function(){
-    if (showUp.style.visibility = 'hidden'){
-        showUp.style.visibility = 'visible';
-    }
-    else{
-        showUp.style.visibility = 'hidden';
-    }
-});
+if (scrollButton) {
+    scrollButton.addEventListener("click", () => {
+        document.querySelector('html').scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+}
