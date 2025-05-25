@@ -41,7 +41,6 @@ body {
   margin: 0%;
   background-color: rgb(255, 255, 255);
   background-attachment: fixed;
-  height: 260vh;
 }
 
 div#background {
@@ -83,6 +82,7 @@ a:hover {
   width: 100vw;
 display: flex;
 flex-direction: row;
+
 }
 
 .info-text {
