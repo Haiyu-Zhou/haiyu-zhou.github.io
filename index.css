@@ -66,12 +66,13 @@ a:hover {
 
 #top-bar {
   font-size: 15pt;
-  position: relative;
-  top: 1%;
-  right: 1%;
-  text-align: right;
+  position: fixed; /* ✅ Fixed only this */
+  top: 1.9%;
+  left: 1%;
+  text-align: left;
   color: black;
   text-decoration: underline;
+  z-index: 1000;
 }
 
 #info {
